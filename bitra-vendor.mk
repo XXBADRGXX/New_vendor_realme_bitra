@@ -587,13 +587,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2161A/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2161A/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169A/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169A/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169B/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169B/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin \
+#    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin \
+#    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/realme/bitra/proprietary/odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19795/FW_GT9886_SAMSUNG.img \
