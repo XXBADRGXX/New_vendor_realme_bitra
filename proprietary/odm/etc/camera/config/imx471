@@ -32,14 +32,6 @@
 },
 
 {
-  "Key": "MD_HDR_PARSE",
-  "Type": "Int32",
-  "Count": "4",
-  "Value": "1, 200, 3, 8",
-  "Comment": "1: support; 200: blurless+hdr iso trigger; 3: hdr frame number; 6: blurless+hdr frame number"
-},
-
-{
   "Key": "NIGHT_PROCESS_TIME",
   "Type": "Int32",
   "Count": "2",
@@ -104,11 +96,6 @@
 {
   "Key": "SENSOR_BRIGHT_LEVEL",
   "Value": "1023"
-},
-
-{
-  "Key": "SENSOR_BLACK_LEVEL_ISDYNAMIC",
-  "Value": "0"
 },
 
 {
@@ -232,7 +219,7 @@
             0 /*colorBoost*/,
             3 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.01 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -253,7 +240,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -274,7 +261,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -295,7 +282,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -1152,7 +1139,7 @@
             0 /*colorBoost*/,
             3 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.01 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -1173,7 +1160,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -1194,7 +1181,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -1215,7 +1202,7 @@
             0 /*colorBoost*/,
             2 /*movingObjectNoiseRemoval*/,
             60 /*inputSharpnessThreshold*/,
-            0.05 /*inputBrightnessThreshold*/,
+            0.012 /*inputBrightnessThreshold*/,
             0 /*allocate*/,
             -1 /*baseFrame*/,
             0 /*faceNoiseReductionStrength*/,
@@ -1543,6 +1530,34 @@
             0/*lux*/,   0/*ToneLength*/, 0/*Brightness*/, 0/*Saturation*/, 0/*SceneType*/
             ",
   "Comment": "arcsoft_hdr_sensor_param_t"
+},
+
+{
+  "Key": "PORTRAIT_REPAIR_TRIGGER",
+  "Type": "Int32",
+  "Count": "5",
+  "Value": "1     /*1:enable 0:disable */,
+            3200  /*min iso threshold*/,
+            20000 /*max iso threshold*/,
+            1     /*min face number*/,
+            6     /*max face number*/",
+  "Comment": "portrait repair trigger params"
+},
+
+{
+  "VendorTag": "aps.params.portrait.repair",
+  "Type": "Float",
+  "Count": "9",
+  "Value": "0.8     /*alpha*/,
+            0.2     /*beta*/,
+            0.5     /*mouth*/,
+            0.9     /*eye*/,
+            0.2     /*eyebrow*/,
+            0.9     /*smoothness*/,
+            1       /*quality_strength*/,
+            0       /*quality_debug*/,
+            400     /*runTimeMemSize*/",
+  "Comment": "portrait_repair_process_params"
 },
 
 {

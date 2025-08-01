@@ -303,6 +303,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/etc/camera/motionblur/model.data:$(TARGET_COPY_OUT_ODM)/etc/camera/motionblur/model.data \
     vendor/realme/bitra/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/realme/bitra/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
+    vendor/realme/bitra/proprietary/odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e47_s1.bundle \
+    vendor/realme/bitra/proprietary/odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle:$(TARGET_COPY_OUT_ODM)/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle \
     vendor/realme/bitra/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut0 \
     vendor/realme/bitra/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut1 \
     vendor/realme/bitra/proprietary/odm/etc/camera/pf/PerfectColorSet/normal/colorLut10:$(TARGET_COPY_OUT_ODM)/etc/camera/pf/PerfectColorSet/normal/colorLut10 \
@@ -495,13 +497,28 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/realme/bitra/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/realme/bitra/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
+    vendor/realme/bitra/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/realme/bitra/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/realme/bitra/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/realme/bitra/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/bitra/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
     vendor/realme/bitra/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/realme/bitra/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/realme/bitra/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    vendor/realme/bitra/proprietary/odm/etc/libdapparamstorage_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libdapparamstorage_v3_6_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/libdeccfg_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libdeccfg_v3_6_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/libdlbdsservice_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libdlbdsservice_v3_6_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/libqtigef_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libqtigef_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/libstagefright_soft_ddpdec_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libstagefright_soft_ddpdec_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/libstagefrightdolby_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libstagefrightdolby_etc.so \
     vendor/realme/bitra/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_T0_sx9324_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_T0_sx9324_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_T0_sx9324up_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_T0_sx9324up_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_ak991x_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bmi26x_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bmp380_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bmp380_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bu52053nvx_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bu52053nvx_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_mmc5603x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_mmc5603x_0.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_ak991x_0.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_alsps.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_bmi26x_0.json \
@@ -514,8 +531,19 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_mmc5603nj.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_mmc5603nj.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_mn29005.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_mn29005.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_sx933x_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_stk2232_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_stk2232_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_sx9324_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_sx9324_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_sx9324up_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_sx9324up_0.json \
+    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_tcs3408.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/realme/bitra/proprietary/odm/etc/soundfx/libhwdap_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/soundfx/libhwdap_v3_6_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/soundfx/libswdap_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/soundfx/libswdap_v3_6_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc.so:$(TARGET_COPY_OUT_ODM)/etc/vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc.so \
+    vendor/realme/bitra/proprietary/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0_etc.so:$(TARGET_COPY_OUT_ODM)/etc/vendor.dolby_v3_6.hardware.dms360@2.0_etc.so \
     vendor/realme/bitra/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
+    vendor/realme/bitra/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
+    vendor/realme/bitra/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
+    vendor/realme/bitra/proprietary/odm/etc/wifi/regdb_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb_version \
     vendor/realme/bitra/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
     vendor/realme/bitra/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
     vendor/realme/bitra/proprietary/odm/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/140ms_RTP.bin \
@@ -582,7 +610,23 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136859/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136859/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19705/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19705/oplus_vooc_fw.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19706/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19706/oplus_vooc_fw.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19795/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19795/oplus_vooc_fw.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20607/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20607/oplus_vooc_fw.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin \
+    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/21619/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2161A/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2161A/charging_thermal_config_default.txt \
@@ -591,8 +635,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169B/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169B/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin \
-#    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin \
-#    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/realme/bitra/proprietary/odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19795/FW_GT9886_SAMSUNG.img \
@@ -625,6 +667,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin \
+    vendor/realme/bitra/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
     vendor/realme/bitra/proprietary/odm/vendor/firmware/ancap64.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b00 \
     vendor/realme/bitra/proprietary/odm/vendor/firmware/ancap64.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b01 \
     vendor/realme/bitra/proprietary/odm/vendor/firmware/ancap64.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/ancap64.b02 \
@@ -664,10 +707,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
     vendor/realme/bitra/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/realme/bitra/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
-    vendor/realme/bitra/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/realme/bitra/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/realme/bitra/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/realme/bitra/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/realme/bitra/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/realme/bitra/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
     vendor/realme/bitra/proprietary/vendor/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm \
     vendor/realme/bitra/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm \
@@ -776,7 +818,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/realme/bitra/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/realme/bitra/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
-    vendor/realme/bitra/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/realme/bitra/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/bitra/proprietary/vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
     vendor/realme/bitra/proprietary/vendor/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
@@ -895,6 +936,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/realme/bitra/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/realme/bitra/proprietary/vendor/firmware/sn100u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn100u.bin \
+    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
+    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
+    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
+    vendor/realme/bitra/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
     vendor/realme/bitra/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/realme/bitra/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/realme/bitra/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -934,6 +979,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti_2_1 \
     libbtnv \
     libc2d30_bltlib \
+    libcamerapostproc \
     libcamxexternalformatutils \
     libcdsp_default_listener \
     libcdsprpc \
@@ -941,6 +987,7 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdsi_netctrl \
     libdsutils \
+    libextcamera_client \
     libfastcvdsp_stub \
     libfastcvopt \
     libgpudataproducer \
@@ -996,7 +1043,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.4 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    sound_trigger.primary.kona \
     libFileMux_proprietary \
     libacdb-fts \
     libacdbloader \
@@ -1013,6 +1059,7 @@ PRODUCT_PACKAGES += \
     libgcs-ipc \
     libgcs-osal \
     libgcs \
+    libgui1_vendor \
     libhdmipassthru \
     liblistensoundmodel2 \
     libmm-hdcpmgr \
@@ -1025,7 +1072,7 @@ PRODUCT_PACKAGES += \
     libqcodec2_platform \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqtigef \
+    libqtigef_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
@@ -1053,6 +1100,15 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
+    android.hardware.camera.provider@2.4-legacy \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    camera.device@3.3-impl \
+    camera.device@3.4-external-impl \
+    camera.device@3.4-impl \
+    camera.device@3.5-external-impl \
+    camera.device@3.5-impl \
+    camera.device@3.6-external-impl \
     com.qti.eeprom.truly_cmb433 \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
@@ -1063,11 +1119,14 @@ PRODUCT_PACKAGES += \
     com.qti.node.depth \
     com.qti.node.dummyrtb \
     com.qti.node.dummysat \
+    com.qti.node.eisv2.compass \
     com.qti.node.eisv2 \
+    com.qti.node.eisv3.compass \
     com.qti.node.eisv3 \
     com.qti.node.fcv \
     com.qti.node.gpu \
     com.qti.node.memcpy \
+    com.qti.node.remosaic \
     com.qti.node.stich \
     com.qti.node.swec \
     com.qti.node.swfusion \
@@ -1080,7 +1139,9 @@ PRODUCT_PACKAGES += \
     com.qti.stats.asd \
     com.qti.stats.awb \
     com.qti.stats.awbwrapper \
+    com.qti.stats.haf \
     com.qti.stats.hafoverride \
+    com.qti.stats.pdlib \
     com.qti.stats.pdlibsony \
     com.qti.stats.pdlibwrapper \
     com.qti.stats.tracker \
@@ -1089,6 +1150,21 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
     libdepthmapwrapper \
+    com.qti.feature2.anchorsync \
+    com.qti.feature2.demux \
+    com.qti.feature2.frameselect \
+    com.qti.feature2.fusion \
+    com.qti.feature2.generic \
+    com.qti.feature2.gs \
+    com.qti.feature2.hdr \
+    com.qti.feature2.memcpy \
+    com.qti.feature2.mfsr \
+    com.qti.feature2.qcfa \
+    com.qti.feature2.rawhdr \
+    com.qti.feature2.rt \
+    com.qti.feature2.serializer \
+    com.qti.feature2.stub \
+    com.qti.feature2.swmf \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -1176,6 +1252,7 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libface3d_dev \
+    libgame_enhance \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -1321,6 +1398,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
@@ -1399,29 +1477,7 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
-    libmmosal \
-    libmmparser_lite \
-    libmmrtpdecoder \
-    libmmrtpencoder \
-    libwfdclient \
-    libwfdcommonutils \
-    libwfdconfigutils \
-    libwfddisplayconfig \
-    libwfdmminterface \
-    libwfdmmsink \
-    libwfdrtsp \
-    libwfdsinksm \
-    libwfduibcinterface \
-    libwfduibcsink \
-    libwfduibcsinkinterface \
-    libwfduibcsrc \
-    libwfduibcsrcinterface \
     vendor.qti.diaghal@1.0 \
-    com.qualcomm.qti.wifidisplayhal@1.0 \
-    libwfdavenhancements \
-    libwfdmmsrc_system \
-    libwfdservice \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -1434,10 +1490,32 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
     libwfdnative \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     libDeVIS \
@@ -1465,6 +1543,10 @@ PRODUCT_PACKAGES += \
     com.oplus.node.aiaftrack \
     com.oplus.node.drawafinfo \
     com.oplus.node.ecs \
+    com.oplus.node.eispreview \
+    com.oplus.node.eisrecord \
+    com.oplus.node.ozeispreview \
+    com.oplus.node.ozeisrecord \
     com.oplus.node.preview \
     com.oplus.node.sat \
     com.oplus.node.sstabdefer \
@@ -1482,6 +1564,7 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_G6.default \
     fingerprint.goodix_G7.default \
     vendor.qti.esepowermanager@1.1-impl \
+    jcos_nq_client \
     lib-virtual-modem-protos \
     lib2DSlender \
     libAlgoInterface \
@@ -1496,7 +1579,9 @@ PRODUCT_PACKAGES += \
     libAncSegBaseSdk \
     libAncSegmentSdk \
     libBokehPre \
+    libCNamaSDK_vendor \
     libCOppLceTonemapAPI \
+    libCaptureBokeh \
     libEIS \
     libFDClite \
     libFaceBeautyCap \
@@ -1508,6 +1593,7 @@ PRODUCT_PACKAGES += \
     libFilterWrapper \
     libHdrVideo \
     libImageWarpMask \
+    libNamaWrapper \
     libNightVideo \
     libOGLManager \
     libOPLUS_SCPortrait \
@@ -1526,6 +1612,8 @@ PRODUCT_PACKAGES += \
     libSonyIMX471RmscLibrary \
     libStarMode \
     libSuperRaw \
+    libSuperTextWrapper \
+    libTeeClient \
     libTrafficMode \
     libVDBayerHDR \
     libVDBlurless \
@@ -1537,7 +1625,9 @@ PRODUCT_PACKAGES += \
     libVideoEnhance \
     libWaterMark \
     libWaterMode \
+    libXDocProcessSDK \
     libYTCommon \
+    lib_cryptoeng_api \
     lib_rectify \
     libaisal \
     libaisd \
@@ -1554,6 +1644,8 @@ PRODUCT_PACKAGES += \
     libapsjpeg \
     libapspng \
     libarc.ion \
+    libarc_eis \
+    libarc_eis_custom \
     libarc_sateis \
     libarc_sateis_custom \
     libarcsoft_aicolor_image \
@@ -1587,6 +1679,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_smart_denoise_v4 \
     libarcsoft_super_night_raw \
     libarcsoft_super_night_se_raw \
+    libarcsoft_supervideostabilization \
     libarcsoft_videoautozoom \
     libbsproxy \
     libcalculator \
@@ -1594,10 +1687,14 @@ PRODUCT_PACKAGES += \
     libcalculator_htp \
     libcdm_metrics_protos \
     libcdm_protos \
+    libchrome \
     libcom.oplus.calidatacontainer \
     libcommcenterfw \
     libcommcenterutils \
     libcvface_api \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
     libdmtp-protos-lite \
     libdmtp \
     libdmtpclient \
@@ -1626,6 +1723,9 @@ PRODUCT_PACKAGES += \
     libpngwrapper \
     libpwirisfeature_odm \
     libpwirishalwrapper_odm \
+    libqtigef \
+    libsharebuffer \
+    libsharebuffer_impl \
     libshdr_stub \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
@@ -1634,6 +1734,7 @@ PRODUCT_PACKAGES += \
     libsnpeml \
     libstblur_api \
     libstblur_capture_api \
+    libstdc++ \
     libstface_fd_api \
     libstfaceunlockocl \
     libstfd_mobile_api \
@@ -1642,11 +1743,17 @@ PRODUCT_PACKAGES += \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libui \
     libvl53l1_daemon \
     libwatermark_photo \
     libwvhidl \
     libwvdrmengine \
     sensors.hal.tof \
+    sensors.hal.tofcalib \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
@@ -1704,7 +1811,10 @@ PRODUCT_PACKAGES += \
     manifest_oplus_osiesr.xml \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_dax_dolby_v3_6.xml \
     manifest_oplusSensor.xml \
+    manifest_oplus_cameraextension_aidl.xml \
+    manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_fingerprint.xml \
     adpl \
     adsprpcd \
@@ -1775,6 +1885,7 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor.oplus.hardware.oplusSensor@1.0-service \
     vendor.qti.esepowermanager@1.1-service \
@@ -1784,6 +1895,16 @@ PRODUCT_PACKAGES += \
     vl53l1_daemon_main
 
 PRODUCT_PACKAGES += \
+    odm_lib_libdapparamstorage_v3_6_so \
+    odm_lib_libdeccfg_v3_6_so \
+    odm_lib_libdlbdsservice_v3_6_so \
+    odm_lib_libqtigef_so \
+    odm_lib_libstagefright_soft_ddpdec_so \
+    odm_lib_libstagefrightdolby_so \
+    odm_lib_soundfx_libhwdap_v3_6_so \
+    odm_lib_soundfx_libswdap_v3_6_so \
+    odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0-impl_so \
+    odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0_so \
     vendor_lib64_camera_components_com_qti_stats_haf_so \
     vendor_lib64_camera_components_com_qti_stats_pdlib_so \
     vendor_lib64_libipebpsstriping_so \

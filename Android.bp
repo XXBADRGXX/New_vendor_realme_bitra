@@ -1245,6 +1245,81 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamerapostproc",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libcamerapostproc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+                "libosenseaidlhalclient",
+                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
+                "libmidasserviceintf_aidl",
+                "com.qti.chi.override",
+                "com.qti.feature2.generic",
+                "com.qti.feature2.gs",
+                "libcamera_metadata",
+                "libchilog",
+                "libqdMetaData",
+                "vendor.oplus.hardware.orms@1.0",
+                "libormshalclient",
+                "libz",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamerapostproc.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
+                "libosenseaidlhalclient",
+                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
+                "libmidasserviceintf_aidl",
+                "com.qti.chi.override",
+                "com.qti.feature2.generic",
+                "com.qti.feature2.gs",
+                "libcamera_metadata",
+                "libchilog",
+                "libqdMetaData",
+                "vendor.oplus.hardware.orms@1.0",
+                "libormshalclient",
+                "libz",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcamxexternalformatutils",
     owner: "realme",
     strip: {
@@ -1551,6 +1626,67 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmdmdetect",
                 "libnetutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libextcamera_client",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libextcamera_client.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "libcutils",
+                "libhwbinder",
+                "libbinder",
+                "libui",
+                "liblog",
+                "libgui1_vendor",
+                "android.hidl.token@1.0-utils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "vendor.oplus.hardware.extcamera@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libextcamera_client.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "libcutils",
+                "libhwbinder",
+                "libbinder",
+                "libui",
+                "liblog",
+                "libgui1_vendor",
+                "android.hidl.token@1.0-utils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "vendor.oplus.hardware.extcamera@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -3990,37 +4126,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sound_trigger.primary.kona",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/sound_trigger.primary.kona.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libtinyalsa",
-                "libaudioroute",
-                "libexpat",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libFileMux_proprietary",
     owner: "realme",
     strip: {
@@ -4457,6 +4562,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libgui1_vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgui1_vendor.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "android.hidl.token@1.0-utils",
+                "libbase",
+                "libcutils",
+                "libEGL",
+                "libGLESv2",
+                "libhidlbase",
+                "liblog",
+                "libnativewindow",
+                "libsync",
+                "libui-v30",
+                "libutils",
+                "libvndksupport",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhdmipassthru",
     owner: "realme",
     strip: {
@@ -4807,7 +4953,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqtigef",
+    name: "libqtigef_vendor",
+    stem: "libqtigef",
     owner: "realme",
     strip: {
         none: true,
@@ -5672,10 +5819,10 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libc",
                 "libm",
                 "libdl",
@@ -5708,18 +5855,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcdsprpc",
                 "libqdMetaData",
                 "libhardware",
                 "libsensorslog",
                 "libutils",
                 "libxml2",
-                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-                "libbinder_ndk",
+                "vendor.oplus.hardware.commondcs@1.0",
                 "libchilog",
                 "libcom.qti.chinodeutils",
                 "libz",
@@ -5982,18 +6128,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcdsprpc",
                 "libqdMetaData",
                 "libhardware",
                 "libsensorslog",
                 "libutils",
                 "libxml2",
-                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-                "libbinder_ndk",
+                "vendor.oplus.hardware.commondcs@1.0",
                 "libcamera_metadata",
                 "libchilog",
                 "libcom.qti.chinodeutils",
@@ -6031,18 +6176,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcdsprpc",
                 "libqdMetaData",
                 "libhardware",
                 "libsensorslog",
                 "libutils",
                 "libxml2",
-                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-                "libbinder_ndk",
+                "vendor.oplus.hardware.commondcs@1.0",
                 "libcamera_metadata",
                 "libchilog",
                 "libcom.qti.chinodeutils",
@@ -6200,18 +6344,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcdsprpc",
                 "libqdMetaData",
                 "libhardware",
                 "libsensorslog",
                 "libutils",
                 "libxml2",
-                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-                "libbinder_ndk",
+                "vendor.oplus.hardware.commondcs@1.0",
                 "libcamera_metadata",
                 "libchilog",
                 "libcom.qti.chinodeutils",
@@ -6280,10 +6423,10 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcamera_metadata",
                 "libchilog",
                 "libcom.qti.chinodeutils",
@@ -6813,10 +6956,10 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libc",
                 "libm",
                 "libdl",
@@ -7221,18 +7364,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcdsprpc",
                 "libqdMetaData",
                 "libhardware",
                 "libsensorslog",
                 "libutils",
                 "libxml2",
-                "vendor.oplus.hardware.commondcs-V1-ndk_platform",
-                "libbinder_ndk",
+                "vendor.oplus.hardware.commondcs@1.0",
                 "libcamera_metadata",
                 "libcamxfdengine",
                 "libcamximageformatutils",
@@ -7308,17 +7450,17 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.osense.client@1.0",
+                "libosensehalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libcamera_metadata",
                 "libchilog",
                 "libhardware",
                 "libqdMetaData",
                 "libutils",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
-                "vendor.oplus.hardware.cameraextension-V1-service-impl",
+                "vendor.oplus.hardware.cameraextension@1.0-service-impl",
                 "vendor.qti.hardware.vpp@1.1",
                 "vendor.qti.hardware.vpp@1.2",
                 "libhwconfigurationutil",
@@ -10461,6 +10603,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
+                "android.frameworks.stats@1.0",
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
@@ -11372,7 +11515,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libril-qc-hal-qmi.so",
             ],
             shared_libs: [
-                "vendor.oplus.hardware.radio@1.0",
+                "libbinder_ndk",
+                "vendor.oplus.hardware.radio-V2-ndk_platform",
                 "vendor.oplus.hardware.appradio@1.0",
                 "vendor.oplus.hardware.ims@1.0",
                 "libhidlbase",
@@ -11459,7 +11603,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.data.connection@1.1",
                 "libcommcenterutils",
                 "libcommcenterfw",
-                "libbinder_ndk",
                 "libdmtpclient",
                 "lib-virtual-modem-protos",
                 "vendor.oplus.hardware.communicationcenter_compat@1.0",
@@ -15846,879 +15989,6 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmmosal",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libmmosal.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmmosal.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmparser_lite",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libmmparser_lite.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmmosal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmmparser_lite.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libmmosal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmrtpdecoder",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libmmrtpdecoder.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libmmosal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmmrtpdecoder.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libmmosal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmrtpencoder",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libmmrtpencoder.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libmmrtpencoder.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdclient",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdclient.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libmmosal",
-                "libinput",
-                "libwfdsinksm",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libwfdmminterface",
-                "libnativewindow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdclient.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libmmosal",
-                "libinput",
-                "libwfdsinksm",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libwfdmminterface",
-                "libnativewindow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdcommonutils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdcommonutils.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libnl",
-                "libwfdmminterface",
-                "libwfdconfigutils",
-                "libui",
-                "libgui",
-                "libwfddisplayconfig",
-                "libion",
-                "libprocessgroup",
-                "libdng_sdk",
-                "libjpeg",
-                "libpiex",
-                "libpng",
-                "libheif",
-                "libnativewindow",
-                "libEGL",
-                "libGLESv2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdcommonutils.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libnl",
-                "libwfdmminterface",
-                "libwfdconfigutils",
-                "libui",
-                "libgui",
-                "libwfddisplayconfig",
-                "libion",
-                "libprocessgroup",
-                "libdng_sdk",
-                "libjpeg",
-                "libpiex",
-                "libpng",
-                "libheif",
-                "libnativewindow",
-                "libEGL",
-                "libGLESv2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdconfigutils",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdconfigutils.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libnl",
-                "libwfdmminterface",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdconfigutils.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libnl",
-                "libwfdmminterface",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfddisplayconfig",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfddisplayconfig.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "vendor.display.config@2.0",
-                "libdisplayconfig.system.qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfddisplayconfig.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "vendor.display.config@2.0",
-                "libdisplayconfig.system.qti",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmminterface",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdmminterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdmminterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmmsink",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdmmsink.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libmedia",
-                "libaudioclient",
-                "libgui",
-                "libbinder",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libui",
-                "libmmparser_lite",
-                "libmmrtpdecoder",
-                "libcutils",
-                "libwfddisplayconfig",
-                "libhwui",
-                "libwfdmminterface",
-                "libhidlbase",
-                "libhidlmemory",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libandroid",
-                "libmediandk",
-                "libaaudio",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdmmsink.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libmedia",
-                "libaudioclient",
-                "libgui",
-                "libbinder",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libui",
-                "libmmparser_lite",
-                "libmmrtpdecoder",
-                "libcutils",
-                "libwfddisplayconfig",
-                "libhwui",
-                "libwfdmminterface",
-                "libhidlbase",
-                "libhidlmemory",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libandroid",
-                "libmediandk",
-                "libaaudio",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdrtsp",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdrtsp.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdrtsp.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdsinksm",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdsinksm.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libwfdrtsp",
-                "libwfduibcinterface",
-                "libwfdmmsink",
-                "libmmosal",
-                "libmedia",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libwfdmminterface",
-                "libmmrtpencoder",
-                "libmmrtpdecoder",
-                "libhidlbase",
-                "libnativewindow",
-                "libmediandk",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfdsinksm.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libcutils",
-                "libutils",
-                "libwfdrtsp",
-                "libwfduibcinterface",
-                "libwfdmmsink",
-                "libmmosal",
-                "libmedia",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libwfdmminterface",
-                "libmmrtpencoder",
-                "libmmrtpdecoder",
-                "libhidlbase",
-                "libnativewindow",
-                "libmediandk",
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcinterface",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfduibcinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrcinterface",
-                "libwfduibcsinkinterface",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfduibcinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrcinterface",
-                "libwfduibcsinkinterface",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsink",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfduibcsink.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfduibcsink.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsinkinterface",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfduibcsinkinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsink",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfduibcsinkinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsink",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsrc",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfduibcsrc.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "libwfdcommonutils",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfdconfigutils",
-                "libwfddisplayconfig",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfduibcsrc.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "libwfdcommonutils",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfdconfigutils",
-                "libwfddisplayconfig",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfduibcsrcinterface",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfduibcsrcinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrc",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libwfduibcsrcinterface.so",
-            ],
-            shared_libs: [
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libwfduibcsrc",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.diaghal@1.0",
     owner: "realme",
     strip: {
@@ -16757,179 +16027,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.wifidisplayhal@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdavenhancements",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdavenhancements.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libgui",
-                "libui",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdmmsrc_system",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdmmsrc_system.so",
-            ],
-            shared_libs: [
-                "libgui_shim",
-                "libbinder",
-                "libmmosal",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libgui",
-                "libui",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libwfddisplayconfig",
-                "libmedia_helper",
-                "libaudioclient",
-                "libwfdavenhancements",
-                "libqdMetaData.system",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwfdservice",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/libwfdservice.so",
-            ],
-            shared_libs: [
-                "libaudioclient_shim",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libgui",
-                "libwfdsinksm",
-                "libmmosal",
-                "libwfdcommonutils",
-                "libwfdconfigutils",
-                "libinput",
-                "libwfdmminterface",
-                "libmedia_helper",
-                "libaudioclient",
-                "libaudiofoundation",
-                "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
-                "libwfdmmsrc_system",
-                "libwfdavenhancements",
-                "libhidlbase",
-                "vendor.qti.hardware.wifidisplaysession@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession@1.0",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
     prefer: true,
     system_ext_specific: true,
 }
@@ -17018,6 +16115,9 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "vendor.qti.imsrtpservice@3.0",
                 "vendor.qti.imsrtpservice@3.1",
+                "libbinder",
+                "libbinder_ndk",
+                "vendor.qti.ImsRtpService-V1-ndk",
                 "libdiag_system",
                 "libcutils",
                 "libutils",
@@ -17308,6 +16408,411 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmmosal",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmmosal.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmparser_lite",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmmparser_lite.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmmosal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpdecoder",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmmrtpdecoder.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libmmosal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmmrtpencoder",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmmrtpencoder.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdavenhancements",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdavenhancements.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libgui",
+                "libui",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdclient",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdclient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libgui",
+                "libmmosal",
+                "libinput",
+                "libwfdsinksm",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libwfdmminterface",
+                "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdcommonutils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdcommonutils.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libnl",
+                "libwfdmminterface",
+                "libwfdconfigutils",
+                "libui",
+                "libgui",
+                "libwfddisplayconfig",
+                "libion",
+                "libprocessgroup",
+                "libdng_sdk",
+                "libjpeg",
+                "libpiex",
+                "libpng",
+                "libheif",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdconfigutils",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdconfigutils.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libnl",
+                "libwfdmminterface",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfddisplayconfig",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfddisplayconfig.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "vendor.display.config@2.0",
+                "libdisplayconfig.system.qti",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.config-V5-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmminterface",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdmminterface.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmsink",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdmmsink.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libmedia",
+                "libaudioclient",
+                "libgui",
+                "libbinder",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libui",
+                "libmmparser_lite",
+                "libmmrtpdecoder",
+                "libcutils",
+                "libwfddisplayconfig",
+                "libhwui",
+                "libwfdmminterface",
+                "libhidlbase",
+                "libhidlmemory",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libandroid",
+                "libmediandk",
+                "libaaudio",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdmmsrc_system",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libgui",
+                "libui",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libwfddisplayconfig",
+                "libmedia_helper",
+                "libaudioclient",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.mapper@4.0",
+                "libvndksupport",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdnative",
     owner: "realme",
     strip: {
@@ -17319,8 +16824,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdnative.so",
             ],
             shared_libs: [
-                "libinput_shim",
-                "libbinder_shim",
                 "libandroid_runtime",
                 "libui",
                 "libinput",
@@ -17330,11 +16833,281 @@ cc_prebuilt_library_shared {
                 "libwfdclient",
                 "libhidlbase",
                 "libhidlmemory",
-                "libhidlbase",
+                "libbinder",
+                "libgui",
+                "android.hidl.base@1.0",
                 "android.hidl.token@1.0-utils",
                 "android.hardware.graphics.common@1.0",
                 "android.hardware.graphics.bufferqueue@1.0",
                 "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdrtsp",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdrtsp.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "libutils",
+                "libmmosal",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdservice",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libgui",
+                "libwfdsinksm",
+                "libmmosal",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libmedia_helper",
+                "libaudioclient",
+                "libaudiofoundation",
+                "audioclient-types-aidl-cpp",
+                "android.media.audio.common.types-V4-cpp",
+                "libwfdmmsrc_system",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "vendor.qti.hardware.wifidisplaysession@1.0",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdsinksm",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdsinksm.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "libutils",
+                "libwfdrtsp",
+                "libwfduibcinterface",
+                "libwfdmmsink",
+                "libmmosal",
+                "libmedia",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libwfdmminterface",
+                "libmmrtpencoder",
+                "libmmrtpdecoder",
+                "libhidlbase",
+                "libnativewindow",
+                "libmediandk",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcinterface",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfduibcinterface.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrcinterface",
+                "libwfduibcsinkinterface",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsink",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfduibcsink.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libwfdconfigutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsinkinterface",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfduibcsinkinterface.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsink",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrc",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfduibcsrc.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "libwfdcommonutils",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfdconfigutils",
+                "libwfddisplayconfig",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfduibcsrcinterface",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfduibcsrcinterface.so",
+            ],
+            shared_libs: [
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libwfduibcsrc",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -17414,6 +17187,60 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession@1.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17796,9 +17623,9 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcdsprpc",
                 "libosie_stub",
-                "libc++_shared",
-                "libm",
                 "libdl",
+                "libm",
+                "libc++_shared",
                 "libc",
             ],
         },
@@ -17810,9 +17637,9 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcdsprpc",
                 "libosie_stub",
-                "libc++_shared",
-                "libm",
                 "libdl",
+                "libm",
+                "libc++_shared",
                 "libc",
             ],
         },
@@ -18019,10 +17846,10 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.orms@1.0",
+                "libormshalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libc",
                 "libm",
                 "libdl",
@@ -18271,10 +18098,10 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.oplus.hardware.osense.client-V1-ndk_platform",
-                "libosenseaidlhalclient",
-                "vendor.oplus.hardware.cammidasservice-V1-ndk_platform",
-                "libmidasserviceintf_aidl",
+                "vendor.oplus.hardware.orms@1.0",
+                "libormshalclient",
+                "vendor.oplus.hardware.cammidasservice@1.0",
+                "libmidasserviceintf",
                 "libSEC.HybridHDR",
                 "libc",
                 "libm",
@@ -18376,6 +18203,140 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.eispreview",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.eispreview.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcom.qti.chinodeutils",
+                "libarc_eis",
+                "libutils",
+                "libcutils",
+                "libarcsoft_supervideostabilization",
+                "lib_rectify",
+                "libarc_eis_custom",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.eisrecord",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.eisrecord.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcom.qti.chinodeutils",
+                "libarc_eis",
+                "libutils",
+                "libcutils",
+                "libarcsoft_supervideostabilization",
+                "lib_rectify",
+                "libarc_eis_custom",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.ozeispreview",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.ozeispreview.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcom.qti.chinodeutils",
+                "libarc_sateis",
+                "libutils",
+                "libcutils",
+                "libtriplecam_image_optical_zoom",
+                "libtriplecam_optical_zoom_control",
+                "libtriplecam_optical_zoom_vs",
+                "libtriplecam_video_optical_zoom",
+                "lib_rectify",
+                "libarc_sateis_custom",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.ozeisrecord",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.ozeisrecord.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcom.qti.chinodeutils",
+                "libarc_sateis",
+                "libutils",
+                "libcutils",
+                "libtriplecam_image_optical_zoom",
+                "libtriplecam_optical_zoom_control",
+                "libtriplecam_optical_zoom_vs",
+                "libtriplecam_video_optical_zoom",
+                "lib_rectify",
+                "libarc_sateis_custom",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -18945,6 +18906,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "jcos_nq_client",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/jcos_nq_client.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libchrome",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib-virtual-modem-protos",
     owner: "realme",
     strip: {
@@ -19007,7 +18998,8 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libAlgoInterface.so",
             ],
             shared_libs: [
-                "libAlgoProcess",
+                "vendor.qti.hardware.camera.postproc@1.0",
+                "libqdMetaData",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -19016,8 +19008,7 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "libnativewindow",
                 "libhidlbase",
-                "libqdMetaData",
-                "vendor.qti.hardware.camera.postproc@1.0",
+                "libAlgoProcess",
                 "libc++",
                 "libc",
                 "libm",
@@ -19046,9 +19037,9 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.common-V6-ndk",
                 "libgralloctypes",
                 "libqdMetaData",
-                "vendor.qti.hardware.camera.postproc@1.0",
                 "vendor.qti.hardware.display.mapper@4.0",
                 "libgralloc.qti",
+                "vendor.qti.hardware.camera.postproc@1.0",
                 "libosenseaidlhalclient",
                 "vendor.oplus.hardware.osense.client-V1-ndk_platform",
                 "libion",
@@ -19064,6 +19055,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libselinux",
+                "libexif-jpeg-aps",
                 "libc++",
                 "libc",
                 "libm",
@@ -19339,6 +19331,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libCNamaSDK_vendor",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libCNamaSDK_vendor.so",
+            ],
+            shared_libs: [
+                "libfuai_vendor",
+                "liblog",
+                "libGLESv2",
+                "libEGL",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libCOppLceTonemapAPI",
     owner: "realme",
     strip: {
@@ -19355,6 +19374,32 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libstdc++_vendor",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCaptureBokeh",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libCaptureBokeh.so",
+            ],
+            shared_libs: [
+                "libc++_shared",
+                "liblog",
+                "libz",
+                "libc",
+                "libm",
                 "libdl",
             ],
         },
@@ -19655,6 +19700,34 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNamaWrapper",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libNamaWrapper.so",
+            ],
+            shared_libs: [
+                "libCNamaSDK_vendor",
+                "libfuai_vendor",
+                "libEGL",
+                "libGLESv3",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -20121,6 +20194,58 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libSuperTextWrapper",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libSuperTextWrapper.so",
+            ],
+            shared_libs: [
+                "libXDocProcessSDK",
+                "libYTCommon",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libTeeClient",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libTeeClient.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libTrafficMode",
     owner: "realme",
     strip: {
@@ -20382,6 +20507,34 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libdl",
                 "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libXDocProcessSDK",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libXDocProcessSDK.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libYTCommon",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libz",
                 "libm",
             ],
         },
@@ -20820,6 +20973,67 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarc_eis",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libarc_eis.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libarcsoft_supervideostabilization",
+                "lib_rectify",
+                "libarc_eis_custom",
+                "libutils",
+                "libcutils",
+                "libcom.qti.chinodeutils",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarc_eis_custom",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libarc_eis_custom.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libcamera_metadata",
+                "libcom.qti.chinodeutils",
+                "liblog",
+                "libutils",
+                "libui",
+                "libhwconfigurationutil",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarc_sateis",
     owner: "realme",
     strip: {
@@ -20998,6 +21212,10 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_left.so",
             ],
             shared_libs: [
+                "libz",
+                "libarcsoft_qnnhtp",
+                "libcdsprpc",
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
@@ -21023,6 +21241,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_preview.so",
             ],
             shared_libs: [
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
@@ -21048,6 +21267,10 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libarcsoft_dualcam_refocus_uw.so",
             ],
             shared_libs: [
+                "libz",
+                "libarcsoft_qnnhtp",
+                "libcdsprpc",
+                "libarc.ion",
                 "libmpbase",
                 "liblog",
                 "libc",
@@ -21308,7 +21531,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcdsprpc",
-                "libhta_hexagon_runtime",
+                "libdl",
                 "libc",
                 "libm",
             ],
@@ -21666,7 +21889,6 @@ cc_prebuilt_library_shared {
                 "libarcsoft_hta",
                 "libOpenCL",
                 "libcdsprpc",
-                "libhta_hexagon_runtime",
                 "liblog",
                 "libc",
                 "libm",
@@ -21953,6 +22175,94 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdapparamstorage_v3_6",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdapparamstorage_v3_6.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdeccfg_v3_6",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdeccfg_v3_6.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdlbdsservice_v3_6",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdlbdsservice_v3_6.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libstagefright_foundation-v33",
+                "liblog",
+                "libxml2",
+                "libdapparamstorage_v3_6",
+                "libsqlite",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -22778,6 +23088,85 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqtigef",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libqtigef.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsharebuffer",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsharebuffer.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsharebuffer_impl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsharebuffer_impl.so",
+            ],
+            shared_libs: [
+                "libui",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libdl",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libshdr_stub",
     owner: "realme",
     strip: {
@@ -23318,6 +23707,156 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutilscallstack",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.hal.tofcalib",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/sensors.hal.tofcalib.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutilscallstack",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhwdap_v3_6",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libhwdap_v3_6.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libaudioutils",
+                "libdapparamstorage_v3_6",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdap_v3_6",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libswdap_v3_6.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libaudioutils",
+                "libdapparamstorage_v3_6",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libdapparamstorage_v3_6",
+                "libdlbdsservice_v3_6",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -24264,9 +24803,36 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_dax_dolby_v3_6.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_oplusSensor.xml",
     owner: "realme",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_cameraextension_aidl.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_cammidasservice_aidl.xml",
+    owner: "realme",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -26419,6 +26985,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libbinder",
+                "libbinder_ndk",
                 "libcutils",
                 "libutils",
                 "libhidlbase",
@@ -26426,6 +26993,7 @@ cc_prebuilt_binary {
                 "libhardware_legacy",
                 "liblog",
                 "vendor.qti.hardware.dpmservice@1.0",
+                "vendor.qti.hardware.dpmaidlservice-V1-ndk",
                 "libavservices_minijail",
                 "libc++",
                 "libc",
@@ -26446,12 +27014,11 @@ cc_prebuilt_binary {
     name: "wfdservice",
     owner: "realme",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/system_ext/bin/wfdservice",
             ],
             shared_libs: [
-                "libwfdservice_shim",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -26469,14 +27036,13 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
     prefer: true,
     system_ext_specific: true,
 }
-
 
 cc_prebuilt_binary {
     name: "android.hardware.drm@1.3-service.widevine",
@@ -26497,6 +27063,38 @@ cc_prebuilt_binary {
                 "libutils",
                 "libwvhidl",
                 "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0-service",
+    owner: "realme",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libdapparamstorage_v3_6",
+                "libdlbdsservice_v3_6",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
                 "libc++",
                 "libc",
                 "libm",
@@ -26725,6 +27323,76 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+install_symlink {
+    name: "odm_lib_libdapparamstorage_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdapparamstorage_v3_6.so",
+    symlink_target: "/odm/etc/libdapparamstorage_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libdeccfg_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdeccfg_v3_6.so",
+    symlink_target: "/odm/etc/libdeccfg_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libdlbdsservice_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdlbdsservice_v3_6.so",
+    symlink_target: "/odm/etc/libdlbdsservice_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libqtigef_so",
+    device_specific: true,
+    installed_location: "lib/libqtigef.so",
+    symlink_target: "/odm/etc/libqtigef_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libstagefright_soft_ddpdec_so",
+    device_specific: true,
+    installed_location: "lib/libstagefright_soft_ddpdec.so",
+    symlink_target: "/odm/etc/libstagefright_soft_ddpdec_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libstagefrightdolby_so",
+    device_specific: true,
+    installed_location: "lib/libstagefrightdolby.so",
+    symlink_target: "/odm/etc/libstagefrightdolby_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_soundfx_libhwdap_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/soundfx/libhwdap_v3_6.so",
+    symlink_target: "/odm/etc/soundfx/libhwdap_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_soundfx_libswdap_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/soundfx/libswdap_v3_6.so",
+    symlink_target: "/odm/etc/soundfx/libswdap_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0-impl_so",
+    device_specific: true,
+    installed_location: "lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so",
+    symlink_target: "/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0_so",
+    device_specific: true,
+    installed_location: "lib/vendor.dolby_v3_6.hardware.dms360@2.0.so",
+    symlink_target: "/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0_etc.so",
 }
 
 install_symlink {
