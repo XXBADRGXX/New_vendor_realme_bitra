@@ -7013,36 +7013,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qti.stats.haf",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.stats.hafoverride",
     owner: "realme",
     strip: {
@@ -7072,35 +7042,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "com.qti.stats.pdlib",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libofflinelog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "camera/components",
-    prefer: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.pdlibsony",
@@ -9978,7 +9919,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libsensorslog",
                 "libqmi_common_so",
                 "libqmi_cci",
@@ -12680,7 +12621,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.radio.deprecated@1.0",
                 "libqdutils",
                 "qtimutex",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libvndksupport",
                 "libbase",
                 "libz",
@@ -13179,7 +13120,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsensorcal.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libssc",
                 "libutils",
@@ -13239,7 +13180,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdiag",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc",
                 "libm",
                 "libdl",
@@ -13403,7 +13344,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsapi.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libcutils",
                 "libutils",
                 "libqmi_common_so",
@@ -13433,7 +13374,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsdiaglog.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libsensorslog",
@@ -13521,7 +13462,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libssc.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
                 "libcutils",
@@ -14064,7 +14005,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsnsapi",
                 "libssc",
@@ -14106,7 +14047,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -23026,7 +22967,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcdm_metrics_protos.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -23051,7 +22992,7 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcdm_protos.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -26232,7 +26173,7 @@ cc_prebuilt_binary {
                 "android.hidl.safe_union@1.0",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "libprotobuf-cpp-full-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libsync",
                 "libc++",
                 "libc",

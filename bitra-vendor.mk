@@ -512,29 +512,13 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/etc/libstagefright_soft_ddpdec_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libstagefright_soft_ddpdec_etc.so \
     vendor/realme/bitra/proprietary/odm/etc/libstagefrightdolby_etc.so:$(TARGET_COPY_OUT_ODM)/etc/libstagefrightdolby_etc.so \
     vendor/realme/bitra/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_T0_sx9324_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_T0_sx9324_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_T0_sx9324up_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_T0_sx9324up_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_ak991x_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bmi26x_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bmp380_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bmp380_0.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_bu52053nvx_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bu52053nvx_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_mmc5603x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_mmc5603x_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_ak991x_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_alsps.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_bmi26x_0.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_cct.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_cct.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_cct_rear.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_cct_rear.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_icm4x6xa.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_icm4x6xa.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_icm4x6xx.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_icm4x6xx.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_lsm6ds3c.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_lsm6ds3c.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_lsm6dso.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_lsm6dso.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_mmc5603nj.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_mmc5603nj.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_mn29005.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_mn29005.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_qrd_sx933x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_sx933x_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_stk2232_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_stk2232_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_sx9324_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_sx9324_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_sx9324up_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_sx9324up_0.json \
-    vendor/realme/bitra/proprietary/odm/etc/sensor/config/kona_tcs3408.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_tcs3408.json \
     vendor/realme/bitra/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/realme/bitra/proprietary/odm/etc/soundfx/libhwdap_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/soundfx/libhwdap_v3_6_etc.so \
     vendor/realme/bitra/proprietary/odm/etc/soundfx/libswdap_v3_6_etc.so:$(TARGET_COPY_OUT_ODM)/etc/soundfx/libswdap_v3_6_etc.so \
@@ -610,23 +594,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136859/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136859/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19705/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19705/oplus_vooc_fw.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19706/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19706/oplus_vooc_fw.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/19795/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19795/oplus_vooc_fw.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20607/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20607/oplus_vooc_fw.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin \
-    vendor/realme/bitra/proprietary/odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/21619/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/charging_thermal_config_default.txt \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin \
     vendor/realme/bitra/proprietary/odm/firmware/fastchg/2161A/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2161A/charging_thermal_config_default.txt \
@@ -643,9 +611,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/odm/firmware/tp/21619/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/FW_S3908_SAMSUNG.img \
     vendor/realme/bitra/proprietary/odm/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img \
     vendor/realme/bitra/proprietary/odm/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img \
-    vendor/realme/bitra/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG.img \
-    vendor/realme/bitra/proprietary/odm/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/FW_FT3658U_SAMSUNG_FAE.img \
-    vendor/realme/bitra/proprietary/odm/firmware/tp/21623/LIMIT_FT3658U_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21623/LIMIT_FT3658U_SAMSUNG.img \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.sensormodule.qtech_imx616.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qtech_imx616.bin \
     vendor/realme/bitra/proprietary/odm/lib64/camera/com.qti.sensormodule.qtech_ov64b.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qtech_ov64b.bin \
@@ -937,9 +902,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/bitra/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/realme/bitra/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
     vendor/realme/bitra/proprietary/vendor/firmware/sn100u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn100u.bin \
-    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
-    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
-    vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
+    #6vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
+    #vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
+    #vendor/realme/bitra/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
     vendor/realme/bitra/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
     vendor/realme/bitra/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/realme/bitra/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
@@ -1905,8 +1870,6 @@ PRODUCT_PACKAGES += \
     odm_lib_soundfx_libswdap_v3_6_so \
     odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0-impl_so \
     odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0_so \
-    vendor_lib64_camera_components_com_qti_stats_haf_so \
-    vendor_lib64_camera_components_com_qti_stats_pdlib_so \
     vendor_lib64_libipebpsstriping_so \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
