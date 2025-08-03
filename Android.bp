@@ -9526,7 +9526,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",                 
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libsensorslog",
                 "libqmi_common_so",
                 "libqmi_cci",
@@ -12229,6 +12230,7 @@ cc_prebuilt_library_shared {
                 "libqdutils",
                 "qtimutex",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libvndksupport",
                 "libbase",
                 "libz",
@@ -12728,6 +12730,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libssc",
                 "libutils",
@@ -12788,6 +12791,7 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libdiag",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc",
                 "libm",
                 "libdl",
@@ -12952,6 +12956,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libcutils",
                 "libutils",
                 "libqmi_common_so",
@@ -12982,6 +12987,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libsensorslog",
@@ -13070,6 +13076,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
                 "libcutils",
@@ -13613,6 +13620,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libclang_rt.ubsan_standalone",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libsnsapi",
                 "libssc",
@@ -13655,6 +13663,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -19507,6 +19516,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -22575,6 +22585,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -22600,6 +22611,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -22820,6 +22832,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -22855,6 +22868,7 @@ cc_prebuilt_library_shared {
                 "libcommcenterfw",
                 "libbinder_ndk",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -22889,6 +22903,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libutils",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libdmtp-protos-lite",
                 "libcommcenterfw",
                 "libc++",
@@ -23411,6 +23426,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libsnsapi",
                 "libssc",
@@ -24184,6 +24200,7 @@ cc_prebuilt_library_shared {
                 "libhidlmemory",
                 "liblog",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libutils",
                 "libc++",
                 "libc",
@@ -24214,6 +24231,7 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "liblog",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -25781,6 +25799,7 @@ cc_prebuilt_binary {
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libsync",
                 "libc++",
                 "libc",
@@ -26965,6 +26984,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libssc",
