@@ -15,8 +15,8 @@ CameraEngmodeConfig :
 <CameraEngmodeRoot>
   <CameraEngmodeConfig>
     <CameraId>0</CameraId>
-    <SensorName>s5kgw1</SensorName>
-    <EepromName>s5kgw1_p24c128e_sunny</EepromName>
+    <SensorName>imx766_riven</SensorName>
+    <EepromName>imx766_gt24p128c2csli</EepromName>
     <isAvailable>true</isAvailable>
     <OisCalib>
       <xGyroOffsetAddr>0x8455</xGyroOffsetAddr>
@@ -77,8 +77,8 @@ CameraEngmodeConfig :
   </CameraEngmodeConfig>
   <CameraEngmodeConfig>
     <CameraId>1</CameraId>
-    <SensorName>hi846</SensorName>
-    <EepromName>hi846_p24p128ed4h</EepromName>
+    <SensorName>imx481_riven</SensorName>
+    <EepromName>imx481_p24p128ed4h</EepromName>
     <isAvailable>true</isAvailable>
     <eepromCalib>
       <isAvailable>true</isAvailable>
@@ -132,8 +132,8 @@ CameraEngmodeConfig :
   </CameraEngmodeConfig>
   <CameraEngmodeConfig>
     <CameraId>2</CameraId>
-    <SensorName>imx471</SensorName>
-    <EepromName>imx471_p24c64e_truly</EepromName>
+    <SensorName>imx615_riven</SensorName>
+    <EepromName>imx615_gt24p64b</EepromName>
     <isAvailable>true</isAvailable>
     <eepromCalib>
       <isAvailable>true</isAvailable>
@@ -181,8 +181,8 @@ CameraEngmodeConfig :
     </eepromCalib>
   </CameraEngmodeConfig>
   <CameraEngmodeConfig>
-    <CameraId>3</CameraId>
-    <SensorName>ov02b</SensorName>
+    <CameraId>4</CameraId>
+    <SensorName>ov02b_riven</SensorName>
     <EepromName>ov02b_gt24p64_holitech</EepromName>
     <isAvailable>true</isAvailable>
     <eepromCalib>
