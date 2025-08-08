@@ -1481,8 +1481,11 @@ PRODUCT_PACKAGES += \
     com.qti.stats.haf \
     com.qti.stats.pdlib \
     libipebpsstriping \
+    fingerprint.goodix_G2.default \
     fingerprint.goodix_G3.default \
     fingerprint.goodix_G5.default \
+    fingerprint.goodix_G6.default \
+    fingerprint.goodix_G7.default \
     vendor.qti.esepowermanager@1.1-impl \
     lib-virtual-modem-protos \
     lib2DSlender \
@@ -1608,8 +1611,11 @@ PRODUCT_PACKAGES += \
     libdmtpclient \
     libeffect_custom \
     libexif-jpeg-aps \
+    libgf_hal_G2 \
     libgf_hal_G3 \
     libgf_hal_G5 \
+    libgf_hal_G6 \
+    libgf_hal_G7 \
     libhci_face_camera_api \
     libhta \
     libhwconfigurationutil \
@@ -1668,6 +1674,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.oplusSensor@1.0 \
     vendor.oplus.hardware.osense.client-V1-ndk_platform_odm \
     vendor.oplus.hardware.osense.client@1.0 \
+    vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.performance@1.0 \
     vendor.oplus.hardware.radio@1.0 \
     vendor.pixelworks.hardware.display@1.0 \

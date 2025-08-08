@@ -80,7 +80,7 @@
     "sticker_mode": "800E",
     "fastvideo_mode": "800C",
     "slowvideo_mode": "1",
-    "portrait_mode": "8001",
+    "portrait_mode": "8011",
     "multi_camera_mode": "802C",
     "microscope_capture_mode":"8001",
     "microscope_video_mode":"800b",
@@ -108,8 +108,8 @@
     "recorder_video_case":[{"preview":"var_camera"}, {"video_recorder":"var_camera"}],
     "video_recorder_snapshot_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"video_recorder":"var_camera"}],
     "video_frame_snapshot_case":[{"preview":"var_camera"}, {"capture":"var_camera"}, {"video":"var_camera"}],
-    "eis_pro_case":[{"preview":"var_camera"}, {"video_recorder":"var_camera"}],
     "hyper_lapse_case":[{"preview":"var_camera"}, {"video":"var_camera"}],
+    "eis_pro_case":[{"preview":"var_camera"}, {"video_recorder":"var_camera"}],
     "video_watermark_case":[{"preview":"var_camera"}, {"video":"var_camera"}],
     "codec_video_case": [{"preview": "var_camera"}, {"capture_yuv": "var_camera"}],
     "preview_frame_case":[{"preview":"var_camera"}, {"preview_frame":"var_camera"}, {"capture":"var_camera"}],
@@ -216,13 +216,11 @@
     "com.oplus.video.stabilization.mode": ["ai_night_video", "Integer", "3"],
     "com.oplus.preview.capture.hdrMode": ["hdr", "String", "1"],
     "com.oplus.portrait.bokeh.type": ["bokeh_type", "String", "3"],
-    "com.oplus.portrait.body.type":["portrait_body_type", "String", "3"],
     "com.oplus.preview.capture.ai":["ai_photo", "String", "1"],
     "com.oplus.configure.fastvideo.hyperLapse":["lapse", "String", "3"]
   },
 
   "vendor_tag_type_values": {
-    "com.oplus.authed.white.list":"com.ss.android.ugc.aweme, com.finshell.wallet",
     "com.oplus.sat.wide.support.imagesizes": "4096X3072X4096X2304X4096X1840X3072X3072",
     "com.oplus.sat.ultra.support.imagesizes": "4624X3468X4624X2608X4624X2080X3468X3468",
     "com.oplus.sat.tele.support.imagesizes": "4000X3000X4000X2256X4000X1800X3000X3000",

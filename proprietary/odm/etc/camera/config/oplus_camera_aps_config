@@ -30,6 +30,14 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.params.gesture",
+  "Type": "Float",
+  "Count": "6",
+  "Value": "2, 0.5, 0, 2, 0, 3",
+  "Comment": "maxHandNum, clsSmoothFactor, narutoGesture, detectionFreq, delayFrameCount, scaling"
+},
+
+{
   "VendorTag": "com.oplus.sat.hdr.zoom.ratio.range",
   "Type": "Float",
   "Count": "2",
@@ -89,22 +97,14 @@
   "VendorTag": "com.oplus.aps.decision.override",
   "Type": "String",
   "Count": "27",
-  "Value": "21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615, 21615"
-},
-
-{
-  "VendorTag": "com.oplus.aps.params.gesture",
-  "Type": "Float",
-  "Count": "6",
-  "Value": "2, 0.5, 0, 2, 0, 3",
-  "Comment": "maxHandNum, clsSmoothFactor, narutoGesture, detectionFreq, delayFrameCount, scaling"
+  "Value": "21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619, 21619"
 },
 
 {
   "VendorTag": "com.oplus.aps.params.sn.skelname",
   "Type": "String",
   "Count": "2",
-  "Value": "libarcsoft_hdrplus_hvx_skel_21615.so, libarcsoft_portraitsn_hvx_skel_21615.so",
+  "Value": "libarcsoft_hdrplus_hvx_skel_21619.so, libarcsoft_portraitsn_hvx_skel_21619.so",
   "Comment": "rear, front"
 },
 
@@ -112,7 +112,7 @@
   "VendorTag": "com.oplus.aps.params.snse.skelname",
   "Type": "String",
   "Count": "1",
-  "Value": "libarcsoft_hdrplus_se_hvx_skel_21615.so",
+  "Value": "libarcsoft_hdrplus_se_hvx_skel_21619.so",
   "Comment": "rear"
 },
 
@@ -120,7 +120,7 @@
   "VendorTag": "com.oplus.aps.params.bokeh",
   "Type": "Int32",
   "Count": "78",
-  "Value": "  0,      2,    1,             0,            0,                     8,                     3072,4096,3072,4096,3072,4096,3072,4096,1,0,        2304,3072,2304,3072,2304,3072,2304,3072,1,0,
+  "Value": "  0,      2,    1,             0,            0,                     1,                     3456,4608,3456,4608,3456,4608,3456,4608,1,0,        1728,2304,1728,2304,1728,2304,1728,2304,1,0,
               180,      2,    1,             0,            0,                     8,                     4000,3000,4000,3000,4000,3000,4000,3000,1,0,        2816,2112,2816,2112,2816,2112,2816,2112,1,0,
               180,      1,    1,             1,            0,                     8,                     4000,3000,4000,3000,4000,3000,4000,3000,1,0,        2816,2112,2816,2112,2816,2112,2816,2112,1,0",
   "Comment": "rotation, mode, dualCalitype,  isTeleMaster, isAppSetBlurintensity, foregroundBlurScale,   masterImageInfo /*struct cameraImageSize_t*/,       slaveImageInfo /*struct cameraImageSize_t*/"
@@ -130,16 +130,16 @@
   "VendorTag": "com.oplus.aps.params.rtb",
   "Type": "Int32",
   "Count": "69",
-  "Value": "  0 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
+  "Value": "  0 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 1 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 13000 /*lowLightTriggerIsoHigh*/, 12000 /*lowLightTriggerIsoLow*/,
                    1440 /*ispOutWidth*/, 1080 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
-                   4096 /*masterPictureWidth*/,3072 /*masterPictureHeight*/, 1536 /*slavePictureWidth*/, 1152 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
+                   4608 /*masterPictureWidth*/,3456 /*masterPictureHeight*/, 2304 /*slavePictureWidth*/, 1728 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
               180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
                    1440 /*ispOutWidth*/, 1080 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
                    4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 2816 /*slavePictureWidth*/, 2112 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
               180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 400 /*farDistanceThres*/, 30 /*nearDistanceThres*/, 1500 /*lowLightTriggerIsoHigh*/, 1400 /*lowLightTriggerIsoLow*/,
                    1440 /*ispOutWidth*/, 1080 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 2 /*s2iReSizeTypeMaster*/, 1 /*c2sReSizeTypeSlave*/, 2 /*s2iReSizeTypeSlave*/,
                    4000 /*masterPictureWidth*/,3000 /*masterPictureHeight*/, 2816 /*slavePictureWidth*/, 2112 /*slavePictureHeight*/, 1 /*isTeleMaster*/,
-              150 /*luxThreshold*/, 1 /*dualCaliType*/, 52/*focusDistanceThresholdFallingFace*/, 56/*focusDistanceThresholdRisingFace*/, 65 /*blurSlope*/, 1 /*blurIntercept*/",
+              150 /*luxThreshold*/, 1 /*dualCaliType*/, 56/*focusDistanceThresholdFallingFace*/, 60/*focusDistanceThresholdRisingFace*/, 65 /*blurSlope*/, 1 /*blurIntercept*/",
   "Comment": "JsonParamsRtb: include rear and front"
 },
 
@@ -147,7 +147,7 @@
   "VendorTag": "com.oplus.aps.params.singlebokeh",
   "Type": "Int32",
   "Count": "2",
-  "Value": "65, 1",
+  "Value": "65, 0",
   "Comment": "JsonParamsSingleBokeh: blurSlope, blurIntercept"
 },
 
@@ -187,7 +187,7 @@
   "VendorTag": "com.oplus.aps.params.upscale",
   "Type": "Int32",
   "Count": "7",
-  "Value": "  250,          50,             4,                          1600,            16777216,      8000,            6000",
+  "Value": "  250,          50,             4,                          1600,            16777216,      6944,            9280",
   "Comment": "estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
 },
 
@@ -759,7 +759,7 @@
             20,
             4096,
             4096,
-            -15, 50, 50, 0, 0, 100",
+            -70, 44, 83, 25, -74, 98",
   "Comment": "
             paramCfgNum,
             estimateTime,
@@ -777,12 +777,12 @@
             s5k2p7sq,
             imx398,
             imx519,
-            imx766_riven,
+            s5kgw1,
             imx319,
             imx471,
             s5kgd1sp,
-            imx615_riven,
-            imx481_riven",
+            imx615,
+            hi846",
   "Comment": "
             suport max 9 config sensor type"
 },
@@ -2063,7 +2063,7 @@
   "Type": "Int32",
   "Count": "9",
   "Value": "0, 0, 0, 0, 0, 0, 0,
-            60,
+            0,
             0",
   "Comment": "lceTonemapParam,
               FrameNeedToSkip,
@@ -2119,14 +2119,15 @@
 },
 
 {
-  "VendorTag": "com.oplus.fwkOmoji",
+  "VendorTag": "com.oplus.aps.capture.ux",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
+  "Value": "1",
+  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
 },
 
 {
-  "VendorTag": "com.oplus.aps.support.night.se",
+  "VendorTag": "com.oplus.fwkOmoji",
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
@@ -2140,18 +2141,10 @@
 },
 
 {
-  "VendorTag": "com.oplus.aps.capture.ux",
+  "VendorTag": "com.oplus.pi_enable.control.asd",
   "Type": "Int32",
   "Count": "1",
   "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.aps.ux.preview_rtb",
-  "Type": "Int32",
-  "Count": "1",
-  "Value": "2",
-  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
 },
 
 {
@@ -2163,6 +2156,14 @@
 },
 
 {
+  "VendorTag": "com.oplus.aps.ux.preview_rtb",
+  "Type": "Int32",
+  "Count": "1",
+  "Value": "2",
+  "Comment": "version3.0 set 1;version4.0:(light scene:1;heavy scene:2;draw scene:4;list pick:8;default 1)"
+},
+
+{
   "VendorTag": "com.oplus.aps.professional.exif.iso",
   "Type": "Int32",
   "Count": "1",
@@ -2170,17 +2171,10 @@
 },
 
 {
-  "VendorTag": "com.oplus.aps.two.significant.figures",
+  "VendorTag": "com.oplus.aps.debug.caliexif.enable",
   "Type": "Int32",
   "Count": "1",
-  "Value": "1"
-},
-
-{
-   "VendorTag": "com.oplus.aps.debug.caliexif.enable",
-   "Type": "Int32",
-   "Count": "1",
-   "Value": "0"
+  "Value": "0"
 }
 
 ]

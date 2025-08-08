@@ -8,7 +8,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 0,
+                    "aps_algo_blurless" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 1,
                     "aps_algo_lowlight_hdr" : 1,
@@ -81,7 +81,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 0,
+                    "aps_algo_blurless" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 1,
                     "aps_algo_lowlight_hdr" : 1,
@@ -259,7 +259,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 0,
+                    "aps_algo_blurless" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
                     "aps_algo_lowlight_hdr" : 0,
@@ -776,7 +776,7 @@
                 {
                     "id" : 0,
                     "enable" : 1,
-                    "aps_algo_blurless" : 0,
+                    "aps_algo_blurless" : 1,
                     "aps_algo_bokeh" : 0,
                     "aps_algo_hdr" : 0,
                     "aps_algo_lowlight_hdr" : 1,
@@ -853,7 +853,7 @@
                             "third_input_height": 0,
                             "output_width": 1440,
                             "output_height": 1080,
-                            "skip_frame_cnt": 2,
+                            "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
                             "algo_list": [ "preview_asd" ]
@@ -896,7 +896,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd","preview_gesture" ]
+                            "algo_list": [ "preview_asd", "preview_gesture" ]
                         }
                     }
                 }
@@ -1008,7 +1008,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": ["preview_default" ]
+                            "algo_list": ["" ]
                         },
                         "video": {
                             "enable": 0
@@ -1136,7 +1136,7 @@
                             "enable": 0
                         },
                         "asd": {
-                            "enable": 0,
+                            "enable": 1,
                             "master_input_width": 1440,
                             "master_input_height": 1080,
                             "slave_input_width": 0,
@@ -1273,7 +1273,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "pipeline_default",
                             "algonode_copy_from": "preview_default",
-                            "algo_list": [ "preview_asd","preview_gesture" ]
+                            "algo_list": [ "preview_asd", "preview_gesture" ]
                         }
                     }
                 }
@@ -1394,7 +1394,7 @@
                             "skip_frame_cnt": 0,
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
-                            "algo_list": [ "preview_rectify", "preview_edge_filter" ]
+                            "algo_list": [ "preview_rectify" ]
                         },
                         "video": {
                             "enable": 0
@@ -1788,6 +1788,67 @@
                             "pipeline_copy_from": "",
                             "algonode_copy_from": "",
                             "algo_list": [ "video_watermark_process_on_output" ]
+                        },
+                        "asd": {
+                            "enable": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "tiltShiftFastVideo",
+            "entity": [
+                {
+                    "id": 0,
+                    "camera_num": 2,
+                    "separate_preview_video": 1,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 1,
+                            "master_input_width": 1920,
+                            "master_input_height": 1080,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 1920,
+                            "output_height": 1080,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_default" ]
+                        },
+                        "video": {
+                            "enable": 1,
+                            "master_input_width": 1920,
+                            "master_input_height": 1080,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 1920,
+                            "output_height": 1080,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "pipeline_preview",
+                            "algonode_copy_from": "preview_offline_ipe",
+                            "algo_list": [ "video_watermark_process_on_output" ]
+                        },
+                        "asd": {
+                            "enable": 0
+                        }
+                    }
+                },
+                {
+                    "id": 1,
+                    "camera_num": 1,
+                    "separate_preview_video": 1,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 0
+                        },
+                        "video": {
+                            "enable": 0
                         },
                         "asd": {
                             "enable": 0

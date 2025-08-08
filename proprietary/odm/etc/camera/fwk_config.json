@@ -1,42 +1,7 @@
 {
     "default": {
-        "orms_need_observe_third_package_list": [
-            "com.tencent.mm",
-            "com.tencent.mobileqq",
-            "com.ss.android.ugc.aweme",
-            "com.smile.gifmaker",
-            "com.meitu.meiyancamera",
-            "com.gorgeous.lite",
-            "com.mt.mtxx.mtxx",
-            "com.kwai.m2u",
-            "com.campmobile.snowcamera",
-            "com.lemon.faceu",
-            "com.kwai.videoeditor",
-            "com.lemon.lv"
-        ],
-        "orms_need_observe_third_activity_list": [
-            "com.tencent.mm.plugin.voip.ui.VideoActivity",
-            "com.tencent.av.ui.AVActivity"
-        ],
-        "need_observe_third_activity_list": [
-            "com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity",
-            "com.yxcorp.gifshow.camera.record.CameraActivity",
-            "com.meitu.myxj.selfie.merge.activity.SelfieCameraActivity",
-            "com.light.beauty.mainpage.MainActivity",
-            "com.mt.mtxx.camera.view.CameraActivity",
-            "com.kwai.m2u.main.CameraActivity",
-            "com.linecorp.b612.android.activity.ActivityCamera",
-            "com.lemon.faceu.business.mainpage.MainActivity",
-            "com.kwai.videoeditor.activity.StartCreateActivity",
-            "com.vega.recorder.LvRecordActivity"
-        ],
-        "need_observe_oplus_float_window_show_package": [
-            "com.tencent.mm",
-            "com.tencent.mobileqq"
-        ],
         "feature_aps_enable": true,
         "feature_auth_enable": true,
-        "feature_cts_enable": true,
         "feature_3a_enable": true,
         "feature_evication_enable": true,
         "feature_resolution_enable": true,
@@ -64,8 +29,6 @@
             "com.rapido.rider.level1"
         ],
         "skip_rus_check_list": [
-            "android.camera.cts",
-            "com.android.cts.verifier",
             "android",
             "com.oplus.engineercamera"
         ],
@@ -77,8 +40,8 @@
         ],
         "defaultMaxPreviewWidth": 3216,
         "defaultMaxPreviewHeight": 3216,
-        "previewSizeForAPI1Width": 3168,
-        "previewSizeForAPI1Height": 1440,
+        "previewSizeForAPI1Width": 3268,
+        "previewSizeForAPI1Height": 2440,
         "resolutionFilterForNotAddSizeAPI1": [
             "4608x3456",
             "4160x3120",
@@ -91,90 +54,10 @@
             "2592x1232",
             "2592x1196",
             "2560x1920"
-        ],
-        "limitSizeListForCts": [
-            4096,
-            3072,
-            4000,
-            3008,
-            4000,
-            3000,
-            3840,
-            2160,
-            3000,
-            3000,
-            3264,
-            2448,
-            2880,
-            2160,
-            2592,
-            1944,
-            3280,
-            2464,
-            2328,
-            1748,
-            2160,
-            1080,
-            1920,
-            1080,
-            1600,
-            1200,
-            1440,
-            1080,
-            1280,
-            960,
-            1280,
-            720,
-            1080,
-            1080,
-            640,
-            640,
-            720,
-            480,
-            640,
-            480,
-            352,
-            288,
-            320,
-            240,
-            176,
-            144,
-            0,
-            0
-        ],
-        "limitThumbnailSizeListForCts": [
-            0,
-            0,
-            176,
-            144,
-            213,
-            160,
-            240,
-            144,
-            256,
-            144,
-            240,
-            160,
-            256,
-            154,
-            246,
-            184,
-            250,
-            188,
-            352,
-            160,
-            240,
-            240,
-            400,
-            180,
-            320,
-            240,
-            375,
-            282
         ]
     },
     "org.codeaurora.ims": {
-        "isFreeDomEvictionPackge": true
+        "isFreeDomEvictionPackge": false
     },
     "android": {
         "isFreeDomEvictionPackge": true
@@ -185,14 +68,7 @@
     "com.tencent.mm": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
-        "app_enable_rio": true,
-        "app_disable_fb_activity": [
-            "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
-        ]
-    },
-    "com.tencent.news": {
-        "previewSizeForAPI1Width": 1920,
-        "previewSizeForAPI1Height": 1080
+        "app_enable_rio": true
     },
     "com.teamtalk.im": {
         "previewSizeForAPI1Width": 3216,
@@ -311,7 +187,10 @@
         "needLimitFpsForAPI1": true
     },
     "com.skype.raider": {
-        "needLimitFpsForAPI1": true
+        "needLimitFpsForAPI1": true,
+        "maxPreviewWidthForAPI2": 1920,
+        "maxPreviewHeightForAPI2": 1080,
+        "thirdPartyAppLimitPicture": true
     },
     "com.vkontakte.android": {
         "needLimitFpsForAPI1": true
@@ -338,42 +217,12 @@
     "com.example.anchortooldemo": {
         "checkToAddPreviewCallbackForAPI1": true
     },
-    "android.camera.cts": {
-        "resolutionFilterForNotAddSizeAPI1": [
-            "4608x3456",
-            "4160x3120",
-            "4160x2340",
-            "4096x2304",
-            "4096x2160",
-            "4096x1834",
-            "4000x2250",
-            "4000x1790",
+    "autotest.oppo.com.simulatedlivebroadcast": {
+        "resolutionFilterForNotAddPreviewSizeAPI1": [
+            "4000x1818",
+            "4000x1800",
             "3840x1644",
-            "3456x2592",
-            "3328x2496",
-            "3216x1440",
-            "2752x2064",
-            "2688x1512",
-            "2592x1940",
-            "2592x1458",
-            "2592x1232",
-            "2592x1196",
-            "2560x1920",
-            "2520x1080",
-            "2412x1080",
-            "2376x1080",
-            "2304x1728",
-            "2304x1296",
-            "1920x1440",
-            "1920x864",
-            "1920x860",
-            "1608x720",
-            "1600x800",
-            "1600x720",
-            "1206x540",
-            "1204x768",
-            "864x480",
-            "804x360"
+            "3264x1836",
         ]
     },
     "com.manboker.headportrait":{
@@ -384,5 +233,9 @@
         "previewSizeForAPI1Width": 2304,
         "previewSizeForAPI1Height": 1046,
         "feature_resolution_enable":true
+    },
+    "com.tencent.mtt":{
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080
     }
 }
